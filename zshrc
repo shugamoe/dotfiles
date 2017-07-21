@@ -139,3 +139,11 @@ export LD_LIBRARY_PATH=/usr/lib/jvm/java-8-openjdk/jre/lib/amd64/server
 
 # Spark
 alias spark-shell="/opt/apache-spark/bin/spark-shell"
+
+# scala
+alias scala="rlwrap scala"
+
+# Pi ssh
+alias pimaster="ssh pi@192.168.0.117" # Model 2B
+alias pislave1="ssh pi@192.168.0.118" # Model 3(A|B)?
+alias pislave2="ssh pi@192.168.0.119" # Model 3(A|B)?

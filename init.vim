@@ -39,9 +39,10 @@ nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 let g:ale_linters = {
-\   'scala': [''],
+\   'scala': ['scalastyle'],
+\   'python': ['pylint'],
+\   'r': ['lintr']
 \}
-
 
 if has("termguicolors")     " set true colors
     set t_8f=\[[38;2;%lu;%lu;%lum
@@ -106,4 +107,3 @@ let g:jedi#use_tabs_not_buffers = 1
 let g:python3_host_prog = '/home/jcm/anaconda3/bin/python'
 let g:python_host_prog = '/home/jcm/anaconda3/bin/python'
 let g:deoplete#sources#jedi#show_docstring = 1
-
