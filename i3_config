@@ -383,14 +383,13 @@ mode "$mode_gaps_outer" {
 }
 
 mode "$open_common" {
-	bindsym c exec --no-startup-id google-chrome-stable; mode "default"
-    bindsym r exec rstudio-bin; mode "default"
-    bindsym s exec steam; mode "default"
+	bindsym c exec --no-startup-id firefox; mode "default"
+    bindsym r exec rstudio; mode "default"
 	
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
-set $open_common Open Common: (c)hrome, (r) studio, (s)team
+set $open_common Open Common: (f)irefox, (r) studio
 bindsym $mod+o mode "$open_common"
 
 mode "$mod_system" {

@@ -1,0 +1,7 @@
+* Database location
+  - /home/jcm/postgres_test/
+* Service File location (specify database cluster location)
+  - /usr/lib/systemd/system/postgresql.service
+* Connect to CSGO database
+  - sudo su postgres
+  - psql gamevis gamevis

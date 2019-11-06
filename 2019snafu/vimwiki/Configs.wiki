@@ -1,0 +1,6 @@
+* SpaceVim
+  - ~/.SpaceVim.d/init.toml
+  - ~/.config/nvim/autoload/myspacevim.vim
+  - Can also access using SPC f v d
+* i3
+  - ~/.i3/config
