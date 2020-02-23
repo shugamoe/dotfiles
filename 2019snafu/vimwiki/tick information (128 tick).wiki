@@ -1,4 +1,0 @@
-1. Round total time limit = 115 seconds (1:55)
-2. Freeze time for buying = 15 seconds (2560 ticks round_start -> round_freeze_end)
-3. round_end -> round_officially_ended = 7 seconds
-4. Bomb takes 3 seconds to plant, 40 to explode.

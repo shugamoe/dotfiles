@@ -1,8 +1,0 @@
-* Installing packages globally
-  - npm install -g <package_name>
-  - npm link <package_name>
-* Installing packages locally (better)
-  - npm init (create package.json file)
-  - npm install <package_name> for packages that module should be shipped with
-  - npm install -D <package_name> for dev but not production dependent packages
-    like jasmine-node, eslint, and what not
