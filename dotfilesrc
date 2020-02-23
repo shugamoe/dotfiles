@@ -1,0 +1,3 @@
+[dotfiles]
+repository = /home/jcm/docs/dotfiles
+packages = ['config']
