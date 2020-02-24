@@ -64,9 +64,6 @@ name='lang#powershell'
 [[layers]]
 name='colorscheme'
 
-# [[layers]]
-# name='vimwiki'
-
 [[layers]]
 name = 'git'
 git-plugin = 'fugitive'
@@ -80,8 +77,4 @@ enable_flow_syntax = true
 name='jalvesaq/Nvim-R'
 
 [[custom_plugins]]
-name='tpope/vim-surround'
-
-[[custom_plugins]]
 name='vimwiki/vimwiki'
-
