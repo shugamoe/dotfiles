@@ -108,6 +108,8 @@ bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
+# approximation at maximizing focused container to adult container only?
+bindsym $mod+Shift+f focus parent; fullscreen; focus child
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -427,6 +429,7 @@ mode "$open_common" {
 	bindsym f exec --no-startup-id firefox; mode "default"
   bindsym r exec rstudio; mode "default"
   bindsym p exec "termite --exec=\\"psql csgoviz csgoviz\\""; mode "default"
+  bindsym w exec --no-startup-id "i3-msg 'append_layout /home/jcm/.config/i3/gpWorkspace.json'"; exec firefox; exec "termite --name 1"; exec "termite --name 2";exec "termite --name 3"; mode "default"
 	
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
@@ -472,7 +475,7 @@ mode "$mod_system" {
 	bindsym Escape mode "default"
 }
 
-set $open_common Open Common: (f)irefox, (r) studio, (p)ostgres--csgotrica
+set $open_common Open Common: (f)irefox, (r) studio, (p)ostgres--csgotrica, GP (w)orkspace
 set $open_settings Open Settings: (t)erminal, (i)3 config, (s)pacevim*, .(b)ashrc, (a)ppearance
 set $open_settings_i3 Open i3 Settings: (c)onfig, (s)tatusline
 set $open_settings_spacevim Open Spacevim Settings: (i)nit.toml, (m)spacevim.vim 

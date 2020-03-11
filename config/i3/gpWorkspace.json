@@ -1,0 +1,107 @@
+{
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": null,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1054,
+               "width": 1334,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Mozilla Firefox",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^firefox$",
+                "window_role": "^browser$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 1,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 410,
+                       "width": 650,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "jcm@mi3vm:~",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "instance": "^termite$",
+                        "instance": "^2$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "floating": "auto_off",
+                    "layout": "splitv",
+                    "percent": 0.5,
+                    "type": "con",
+                    "nodes": [
+                        {
+                            "border": "pixel",
+                            "current_border_width": 1,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 410,
+                               "width": 650,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "jcm@mi3vm:~",
+                            "percent": 0.5,
+                            "swallows": [
+                               {
+                                "instance": "^termite$",
+                                "instance": "^3$"
+                               }
+                            ],
+                            "type": "con"
+                        },
+                        {
+                            "border": "pixel",
+                            "current_border_width": 1,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 410,
+                               "width": 650,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "jcm@mi3vm:~",
+                            "percent": 0.5,
+                            "swallows": [
+                               {
+                                "instance": "^termite$",
+                                "instance": "^1$"
+                               }
+                            ],
+                            "type": "con"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
