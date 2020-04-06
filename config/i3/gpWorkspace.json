@@ -47,7 +47,7 @@
                     "swallows": [
                        {
                         "instance": "^termite$",
-                        "instance": "^2$"
+                        "instance": "^editor$"
                        }
                     ],
                     "type": "con"
@@ -74,7 +74,7 @@
                             "swallows": [
                                {
                                 "instance": "^termite$",
-                                "instance": "^3$"
+                                "instance": "^interpreter$"
                                }
                             ],
                             "type": "con"
@@ -94,7 +94,7 @@
                             "swallows": [
                                {
                                 "instance": "^termite$",
-                                "instance": "^1$"
+                                "instance": "^shell$"
                                }
                             ],
                             "type": "con"

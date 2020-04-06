@@ -427,9 +427,9 @@ mode "$mode_gaps_outer" {
 
 mode "$open_common" {
 	bindsym f exec --no-startup-id firefox; mode "default"
-  bindsym r exec rstudio; mode "default"
+  bindsym r exec rstudio-bin; mode "default"
   bindsym p exec "termite --exec=\\"psql csgoviz csgoviz\\""; mode "default"
-  bindsym w exec --no-startup-id "i3-msg 'append_layout /home/jcm/.config/i3/gpWorkspace.json'"; exec firefox; exec "termite --name 1"; exec "termite --name 2";exec "termite --name 3"; mode "default"
+  bindsym w exec --no-startup-id "i3-msg 'append_layout /home/jcm/.config/i3/gpWorkspace.json'"; exec firefox; exec "termite --name editor"; exec "termite --name interpreter";exec "termite --name shell"; mode "default"
 	
 	bindsym Return mode "default"
 	bindsym Escape mode "default"

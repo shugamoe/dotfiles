@@ -30,6 +30,7 @@
     vimcompatible = true
     bootstrap_after = 'myspacevim#after'
     bootstrap_before = 'myspacevim#before'
+    automatic_update = true
 
 # Enable autocomplete layer
 [[layers]]
