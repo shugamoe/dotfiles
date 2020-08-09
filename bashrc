@@ -138,6 +138,7 @@ ex ()
   fi
 }
 
+# SSH agent add github key
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/github
 clear
