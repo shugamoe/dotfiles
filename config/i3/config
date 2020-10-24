@@ -281,8 +281,9 @@ bindsym $mod+Ctrl+l exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id setscreen
-exec_always eval "$(ssh-agent -s)"
-exec_always ssh-add "~/.ssh/id_rsa"
+# exec_always eval "$(ssh-agent -s)"
+# exec_always ssh-add "~/.ssh/id_rsa"
+# exec_always ssh-add "~/.ssh/gardner_rsa"
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 #exec --no-startup-id manjaro-hello
@@ -297,6 +298,8 @@ exec --no-startup-id start_conky_maia
 exec --no-startup-id xautolock -time 120 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+# Mount remote drive for work
+exec --no-startup-id sshfs jmcclellan@gardner.cri.uchicago.edu:/gpfs/data/gao-lab/ /home/jcm/remote/gao-lab/ -o reconnect
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

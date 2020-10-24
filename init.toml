@@ -79,3 +79,6 @@ name='jalvesaq/Nvim-R'
 
 [[custom_plugins]]
 name='vimwiki/vimwiki'
+
+[[custom_plugins]]
+name='tpope/vim-eunuch'

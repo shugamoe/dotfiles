@@ -6,7 +6,7 @@ foreground          = #93a1a1
 foreground_bold     = #eee8d5
 cursor              = #eee8d5
 cursor_foreground   = #002b36
-background          = rgba(0, 43, 54,)
+background          = rgba(0, 43, 54)
 
 # 16 color space
 
@@ -47,3 +47,8 @@ color18 = #073642
 color19 = #586e75
 color20 = #839496
 color21 = #eee8d5
+
+# font
+[options]
+font = Source Code Pro 10
+style = Roman

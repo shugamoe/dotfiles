@@ -141,7 +141,13 @@ ex ()
 # SSH agent add github key
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/github
+ssh-add ~/.ssh/gardner_rsa
 clear
+
+# Easier plink use
+alias plink="plink1.9"
+alias mount_cri="sshfs jmcclellan@gardner.cri.uchicago.edu:/gpfs/data /home/jcm/remote/ -o reconnect"
+alias cri_connect="ssh -x jmcclellan@gardner.cri.uchicago.edu"
 
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
