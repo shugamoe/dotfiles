@@ -127,6 +127,7 @@ bindsym $mod+Shift+s sticky toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+bindsym $mod+c focus child
 
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -444,6 +445,7 @@ mode "$open_settings" {
   bindsym s mode "$open_settings_spacevim"
 	bindsym b exec "termite --exec=\\"nvim $HOME/.bashrc\\""; mode "default"
 	bindsym t exec "termite --exec=\\"nvim $HOME/.config/termite/config\\""; mode "default"
+	bindsym z exec "termite --exec=\\"nvim $HOME/.zshrc\\""; mode "default"
 	
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
@@ -479,7 +481,7 @@ mode "$mod_system" {
 }
 
 set $open_common Open Common: (f)irefox, (r) studio, (p)ostgres--csgotrica, GP (w)orkspace
-set $open_settings Open Settings: (t)erminal, (i)3 config, (s)pacevim*, .(b)ashrc, (a)ppearance
+set $open_settings Open Settings: (t)erminal, (i)3 config, (s)pacevim*, .(b)ashrc, (a)ppearance, .(z)shrc
 set $open_settings_i3 Open i3 Settings: (c)onfig, (s)tatusline
 set $open_settings_spacevim Open Spacevim Settings: (i)nit.toml, (m)spacevim.vim 
 set $mod_system Mod System: ($mod+m)onitor off, (s)screen (r)eload background: ($mod + n =  status bar)
