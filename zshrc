@@ -120,8 +120,8 @@ fi
 alias plink="plink1.9"
 
 # SSH into
-alias cri_connect="ssh -t -Y -X -A jmcclellan@gardner.cri.uchicago.edu"
-alias rcc_connect="ssh -t -Y -X -A jmcclellan@midway2.rcc.uchicago.edu"
+alias cri_connect="ssh -Y jmcclellan@gardner.cri.uchicago.edu"
+alias rcc_connect="ssh -Y jmcclellan@midway2.rcc.uchicago.edu"
 
 # SSHFS
 alias mount_cri="sshfs jmcclellan@gardner.cri.uchicago.edu:/gpfs/data /home/jcm/remote/cri/ -o reconnect"
@@ -129,3 +129,5 @@ alias mount_rcc="sshfs jmcclellan@midway2.rcc.uchicago.edu:/project2/guiming /ho
 
 # Shortcuts
 alias rcc_logs="cd /home/jcm/remote/rcc/Julian/logs/"
+alias up="cd ../"
+alias uup="cd ../../"
