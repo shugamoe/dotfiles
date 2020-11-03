@@ -129,5 +129,9 @@ alias mount_rcc="sshfs jmcclellan@midway2.rcc.uchicago.edu:/project2/guiming /ho
 
 # Shortcuts
 alias rcc_logs="cd /home/jcm/remote/rcc/Julian/logs/"
+alias rcc_simgs="cd /home/jcm/remote/rcc/Julian/sing/"
+alias rsync="rsync --progress"
 alias up="cd ../"
 alias uup="cd ../../"
+alias test_dose_to_256="cd /home/jcm/scratch/test_sing/ ; singularity run --app dose_to_256 ldpred2_test "/home/jcm/docs/gao_interview_2/output/Adm_Cancer_Chr22.ps21.txt" "/home/jcm/scratch/test_sing/test_Chr22.txt" 1 "vm""
+alias test_bigsnpr_pt="cd /home/jcm/scratch/test_sing/ ; singularity run --app bigsnpr_pt ldpred2_test --code="/home/jcm/docs/ldpred2/test/data/ROOT_Chr{chr_num}_EUR_FBM256.ps21.txt" --snpinfo="/home/jcm/docs/ldpred2/test/data/ROOT_Chr{chr_num}.snpinfo.txt" --fam="/home/jcm/docs/ldpred2/test/data/ROOT_Chr7.fam" --sumstats="/home/jcm/remote/rcc/Mark_Nie/AABC/log_reg/AABC_Chr{chr_num}.overall.meta.txt" --scratch="/home/jcm/scratch/" --out="/home/jcm/scratch/test_sing/" --poc"
