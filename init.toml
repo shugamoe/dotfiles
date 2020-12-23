@@ -82,3 +82,6 @@ name='vimwiki/vimwiki'
 
 [[custom_plugins]]
 name='tpope/vim-eunuch'
+
+[[custom_plugins]]
+name='Shougo/vimproc.vim'

@@ -8,7 +8,7 @@ export ZSH="/home/jcm/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="mortalscumbag"
+ZSH_THEME="peepcode"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,6 +73,8 @@ plugins=(
   ssh-agent
   colorize
   colored-man-pages
+  git vi-mode
+  zsh-interactive-cd
 )
 
 # Colorize with more colors
@@ -128,8 +130,8 @@ alias mount_cri="sshfs jmcclellan@gardner.cri.uchicago.edu:/gpfs/data /home/jcm/
 alias mount_rcc="sshfs jmcclellan@midway2.rcc.uchicago.edu:/project2/guiming /home/jcm/remote/rcc/ -o reconnect"
 
 # Shortcuts
-alias rcc_logs="cd /home/jcm/remote/rcc/Julian/logs/"
-alias rcc_simgs="cd /home/jcm/remote/rcc/Julian/sing/"
+alias rcc_logs="cd /home/jcm/remote/rcc/sing_hub/logs/"
+alias rcc_simgs="cd /home/jcm/remote/rcc/sing_hub/images/"
 alias rsync="rsync --progress"
 alias up="cd ../"
 alias uup="cd ../../"
